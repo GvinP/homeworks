@@ -1,0 +1,21 @@
+.message {
+    display: flex;
+    width: 250px;
+    height: 80px;
+    border: 2px solid lightgreen;
+    background-color: lightgreen;
+    padding: 10px;
+}
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+.meesageBody {
+    width: 180px;
+    display: flex;
+    border: 2px solid gray;
+    margin-left: 20px;
+}
