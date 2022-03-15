@@ -5,6 +5,7 @@
     background-color: greenyellow;
     padding: 10px;
 }
+
 .img {
     width: 50px;
     height: 50px;
@@ -12,46 +13,54 @@
     margin-bottom: 0;
     margin-top: auto;
 }
+
 .messageBody {
     position: relative;
     width: 180px;
     display: flex;
+    justify-content: space-between;
     margin-left: 20px;
     background-color: darkslategray;
     border-radius: 5px;
+    padding: 15px;
 }
+
 .messageBody:before {
-     content:"";
-     position:absolute;
-     z-index:2;
-     bottom:-2px;
-     left:-7px;
-     height:20px;
-     border-left:20px solid darkslategray;
-     border-bottom-right-radius: 16px 14px;
-     transform:translate(0, -2px);
-    background-color: darkslategray;
- }
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -2px;
+    left: -5px;
+    height: 20px;
+    border-left: 20px solid darkslategray;
+    border-bottom-right-radius: 16px 14px;
+    transform: translate(0, -2px);
+}
 
 .messageBody:after {
-     content:"";
-     position:absolute;
-     z-index:3;
-     bottom:-2px;
-     left:4px;
-     width:26px;
-     height:20px;
-
-     border-bottom-right-radius: 10px;
-     transform:translate(-30px, -2px);
-    background-color: darkslategray;
- }
-.name {
-    color: blueviolet;
+    content: "";
+    position: absolute;
+    z-index: 3;
+    bottom: -2px;
+    left: 14px;
+    width: 16px;
+    height: 20px;
+    border-bottom-right-radius: 10px;
+    transform: translate(-30px, -2px);
+    background-color: greenyellow;
 }
+
+.name {
+    color: violet;
+}
+
 .messageText {
     color: lightgreen;
 }
+
 .time {
     color: green;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: right;
 }
