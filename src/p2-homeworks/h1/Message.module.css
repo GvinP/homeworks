@@ -2,8 +2,7 @@
     display: flex;
     width: 250px;
     height: 80px;
-    border: 2px solid lightgreen;
-    background-color: lightgreen;
+    background-color: greenyellow;
     padding: 10px;
 }
 .img {
@@ -13,9 +12,46 @@
     margin-bottom: 0;
     margin-top: auto;
 }
-.meesageBody {
+.messageBody {
+    position: relative;
     width: 180px;
     display: flex;
-    border: 2px solid gray;
     margin-left: 20px;
+    background-color: darkslategray;
+    border-radius: 5px;
+}
+.messageBody:before {
+     content:"";
+     position:absolute;
+     z-index:2;
+     bottom:-2px;
+     left:-7px;
+     height:20px;
+     border-left:20px solid darkslategray;
+     border-bottom-right-radius: 16px 14px;
+     transform:translate(0, -2px);
+    background-color: darkslategray;
+ }
+
+.messageBody:after {
+     content:"";
+     position:absolute;
+     z-index:3;
+     bottom:-2px;
+     left:4px;
+     width:26px;
+     height:20px;
+
+     border-bottom-right-radius: 10px;
+     transform:translate(-30px, -2px);
+    background-color: darkslategray;
+ }
+.name {
+    color: blueviolet;
+}
+.messageText {
+    color: lightgreen;
+}
+.time {
+    color: green;
 }
