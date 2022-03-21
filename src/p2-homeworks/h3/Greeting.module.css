@@ -1,7 +1,27 @@
-.someClass {
+.container {
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.input {
 
 }
 
 .error {
     border: 1px solid red;
+}
+
+.errorText {
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    color: red;
+}
+
+.button {
+    margin-left: 20px;
+}
+
+.counter {
+    margin-left: 20px;
 }
