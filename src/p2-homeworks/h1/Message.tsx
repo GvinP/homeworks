@@ -13,10 +13,8 @@ function Message(props: messageProps) {
         <div className={s.message}>
             <img className={s.img} src={props.avatar} alt={'avatar'}/>
             <div className={s.messageBody}>
-                <div>
                     <div className={s.name}>{props.name}</div>
                     <div className={s.messageText}>{props.message}</div>
-                </div>
                 <div className={s.time}>{props.time}</div>
             </div>
         </div>

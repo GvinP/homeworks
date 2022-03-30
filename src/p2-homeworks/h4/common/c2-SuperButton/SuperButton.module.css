@@ -20,8 +20,10 @@
 }
 
 .red {
-    background: red;
+    background-color: #fc4b75;
+    color: #ffffff;
 }
-.red:hover {
 
+.red:hover {
+    background-color: #d94167;
 }

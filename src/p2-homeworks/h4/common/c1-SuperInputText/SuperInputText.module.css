@@ -1,27 +1,23 @@
 .superInput {
-    border: 2px solid #cecece;
-    background-color: #9fc8d6;
+    border: 1px solid #cecece;
     color: #073b4c;
     border-radius: 5px;
 }
-.superInput:focus {
-    outline-color: yellowgreen;
-    background-color: #9fc8d6;
-}
 
-.superInput:active {
-    border: 2px solid #cccccc;
-    background-color: #9fc8d6;
+.superInput:focus {
+    outline: 1px solid #06d7a0;
 }
 
 .errorInput {
-    border: 2px solid #cecece;
-    background: lightcoral;
+    border: 1px solid #fc4b75;
     border-radius: 5px;
 }
+
 .errorInput:focus {
-    outline-color: red;
+    outline: 1px solid #fc4b75;
 }
+
 .error {
-    color: lightcoral;
+    margin-top: -10px;
+    color: #fc4b75;
 }
