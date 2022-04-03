@@ -1,0 +1,49 @@
+.hiddenMenu {
+    display: block;
+    position: absolute;
+    padding: 5px 5px 5px 50px;
+    box-sizing: border-box;
+    width: 320px;
+    height: max-content;
+    top: 30px;
+    left: -320px;
+    transition: left .2s;
+    z-index: 2;
+    transform: translateZ(0);
+}
+
+.hiddenMenuTicker {
+    appearance: none;
+}
+
+.btnMenu {
+    display: block;
+    background-image: url("menu.svg");
+    background-repeat: no-repeat;
+    padding: 7px;
+    position: relative;
+    top: -10px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+}
+.btnMenu:hover {
+    background-image: url("menuHover.svg");
+}
+
+.hiddenMenuTicker:checked ~ .hiddenMenu {
+    left: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333;
+    margin-right: 15px;
+}
+
+.link:hover,.link:active {
+    color: #9fc8d6;
+}

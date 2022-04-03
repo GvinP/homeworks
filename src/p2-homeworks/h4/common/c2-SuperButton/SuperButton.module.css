@@ -27,3 +27,11 @@
 .red:hover {
     background-color: #d94167;
 }
+
+.disabled {
+    opacity: 0.5;
+}
+.disabled:hover {
+    background-color: #9fc8d6;
+    color: #073b4c;
+}

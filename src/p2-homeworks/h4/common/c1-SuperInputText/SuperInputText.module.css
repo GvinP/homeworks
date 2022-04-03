@@ -1,3 +1,9 @@
+.container {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
 .superInput {
     border: 1px solid #cecece;
     color: #073b4c;
@@ -18,6 +24,8 @@
 }
 
 .error {
-    margin-top: -10px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 25px;
     color: #fc4b75;
 }
