@@ -4,7 +4,7 @@ import HW1 from "../../h1/HW1";
 function Junior() {
     return (
         <div>
-            <HW1/>
+            {/*<HW6/>*/}
             {/*<HW7/>*/}
             {/*<HW8/>*/}
             {/*<HW9/>*/}

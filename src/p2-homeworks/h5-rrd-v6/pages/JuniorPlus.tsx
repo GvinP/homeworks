@@ -4,7 +4,7 @@ import HW2 from "../../h2/HW2";
 function JuniorPlus() {
     return (
         <div>
-            <HW2/>
+            {/*<HW11/>*/}
             {/*<HW12/>*/}
             {/*<HW13/>*/}
             {/*<HW14/>*/}
