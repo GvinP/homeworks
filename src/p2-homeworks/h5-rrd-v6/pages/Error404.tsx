@@ -1,5 +1,5 @@
 import React from 'react'
-import image from './Error404.gif'
+import image from './Error404.png'
 import style from './Error404.module.css'
 import {NavLink} from "react-router-dom";
 import {PATH} from "../Pages";
