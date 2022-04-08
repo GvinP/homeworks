@@ -1,5 +1,6 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from 'react'
 import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText'
+import pen from './pen.svg'
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -61,7 +62,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         className={spanClassName}
 
                         {...restSpanProps}
-                    >
+                    ><img src={pen} style={{width: "20px"}}/>
                         {/*если нет захардкодженного текста для спана, то значение инпута*/}
                         {children || restProps.value}
                     </span>

@@ -27,8 +27,8 @@ function HW6() {
                     spanProps={{children: value ? undefined : 'enter text...'}}
                 />
             </div>
-            <SuperButton onClick={save}>save</SuperButton>
-            <SuperButton onClick={restore}>restore</SuperButton>
+            <SuperButton onClick={save} style={{margin: "5px"}}>save</SuperButton>
+            <SuperButton onClick={restore} style={{margin: "5px"}}>restore</SuperButton>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
