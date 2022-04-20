@@ -1,0 +1,16 @@
+.select {
+    min-width: 60px;
+    padding: 5px 20px 5px;
+    border: 1px solid #cecece;
+    color: #073b4c;
+    border-radius: 5px;
+    appearance: none;
+    background-image: url("strel.svg");
+    background-repeat: no-repeat;
+    background-size: 0.5em;
+    background-position: 90%;
+}
+
+.select:focus {
+    outline: 1px solid #06d7a0;
+}

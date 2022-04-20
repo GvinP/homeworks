@@ -1,0 +1,13 @@
+.radio {
+    position: relative;
+    bottom: -0.2em;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-image: url("radioUnchecked.svg");
+}
+
+.radio:checked {
+    appearance: none;
+    background-image: url("radioChecked.svg");
+}

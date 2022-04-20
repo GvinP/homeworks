@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import style from './Clock.module.css'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
@@ -24,23 +25,28 @@ function Clock() {
         setShow(false)// close
     }
 
-    const stringTime = `${date?.getHours()}:${date?.getMinutes()}:${date?.getSeconds()}` // fix with date
-    const stringDate = `${date?.getMonth()}/${date?.getDay()}/${date?.getFullYear()}` // fix with date
+    const stringTime = date.toLocaleTimeString()
+        // `${date?.getHours()}:${date?.getMinutes()}:${date?.getSeconds()}` // fix with date
+    const stringDate = date.toDateString()
+        // `${date?.getMonth()+1}/${date?.getDate()}/${date?.getFullYear()}` // fix with date
 
     return (
         <div>
-            <div
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-            >
-                {stringTime}
-            </div>
-            {show && (
-                <div>
-                    {stringDate}
+            <div className={style.container}>
+                <div
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                    className={style.clock}
+                >
+                    {stringTime}
                 </div>
-            )}
-            <SuperButton onClick={start} style={{marginRight: '10px'}}>start</SuperButton>
+                {show && (
+                    <div>
+                        {stringDate}
+                    </div>
+                )}
+            </div>
+            <SuperButton onClick={start} className={style.button}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>
         </div>
     )
