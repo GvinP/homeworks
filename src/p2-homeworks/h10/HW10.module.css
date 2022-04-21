@@ -1,0 +1,58 @@
+.loader {
+    height: 30px;
+}
+.loader div {
+    height: 10px;
+    width: 15px;
+    display: inline-block;
+    background-color: #9fc8d6;
+    /*border: 1px solid #118ab2;*/
+    /*-webkit-animation: facebook_loader 1.3s linear infinite;*/
+    animation: loader 1.3s linear infinite;
+    /*-webkit-transform: scale(0.91);*/
+    transform: scale(0.91);
+}
+.loader div:nth-child(1) {
+    /*-webkit-animation-delay: 0.39s;*/
+    animation-delay: 0.39s;
+}
+.loader div:nth-child(2) {
+    /*-webkit-animation-delay: 0.52s;*/
+    animation-delay: 0.52s;
+}
+.loader div:nth-child(3) {
+    /*-webkit-animation-delay: 0.65s;*/
+    animation-delay: 0.65s;
+
+}
+.loader div:nth-child(4) {
+    /*-webkit-animation-delay: 0.65s;*/
+    animation-delay: 0.78s;
+
+}
+.loader div:nth-child(5) {
+    /*-webkit-animation-delay: 0.65s;*/
+    animation-delay: 0.91s;
+
+}
+/*@-webkit-keyframes facebook_loader{*/
+/*0%{*/
+/*    -webkit-transform:scale(1.2);*/
+/*    opacity:1*/
+/*}*/
+/*100%{*/
+/*    -webkit-transform:scale(0.7);*/
+/*    opacity:0.1*/
+
+/*}*/
+/*}*/
+@keyframes loader{
+0%{
+    transform:scale(1.1);
+    opacity:1
+}
+100%{
+    transform:scale(0.6);
+    opacity:0.1
+}
+}

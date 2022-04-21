@@ -4,7 +4,7 @@ import style from './Clock.module.css'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
-    const [date, setDate] = useState<Date>(new Date())
+    const [date, setDate] = useState<Date>()
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
@@ -25,10 +25,8 @@ function Clock() {
         setShow(false)// close
     }
 
-    const stringTime = date.toLocaleTimeString()
-        // `${date?.getHours()}:${date?.getMinutes()}:${date?.getSeconds()}` // fix with date
-    const stringDate = date.toDateString()
-        // `${date?.getMonth()+1}/${date?.getDate()}/${date?.getFullYear()}` // fix with date
+    const stringTime = date?.toLocaleTimeString() // fix with date
+    const stringDate = date?.toDateString() // fix with date
 
     return (
         <div>
