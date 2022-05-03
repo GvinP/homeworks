@@ -3,7 +3,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {loadingAC, StateType} from "./bll/loadingReducer";
-import style from './HW10.module.css'
+import {Loader} from "./Loader";
 
 function HW10() {
     // useSelector, useDispatch
@@ -25,13 +25,7 @@ function HW10() {
             {/*should work (должно работать)*/}
             {loading.loading
                 ? (
-                    <div className={style.loader}>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                    <Loader/>
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
@@ -48,3 +42,5 @@ function HW10() {
 }
 
 export default HW10
+
+
