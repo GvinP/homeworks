@@ -1,31 +1,31 @@
 .visuallyHidden {
-    appearance: none;
-    /*position: absolute;*/
-    /*width: 1px;*/
-    /*height: 1px;*/
-    /*margin: -1px;*/
-    /*border: 0;*/
-    /*padding: 0;*/
-    /*white-space: nowrap;*/
-    /*clip-path: inset(100%);*/
-    /*clip: rect(0 0 0 0);*/
-    /*overflow: hidden;*/
+    /*appearance: none;*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .range {
     display: inline-block;
     position: relative;
-    width: 300px;
-    border: 1px solid;
+    width: 130px;
+
 }
 
 .rangeControls {
     position: relative;
-    height: 41px;
+    height: 21px;
     background-color: #f1f1f1;
     border-radius: 5px;
     margin-bottom: 5px;
-    padding-top: 39px;
+    padding-top: 19px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -45,7 +45,7 @@
 
 .toggle {
     position: absolute;
-    top: 31px;
+    top: 11px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -55,12 +55,4 @@
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     cursor: pointer;
-}
-
-.toggleMin {
-    /*left: 18px;*/
-}
-
-.toggleMax {
-    /*left: 160px;*/
 }

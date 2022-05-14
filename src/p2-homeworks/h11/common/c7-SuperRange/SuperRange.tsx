@@ -1,4 +1,4 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
+import React, {ChangeEvent, DetailedHTMLProps, DragEvent, InputHTMLAttributes} from 'react'
 import s from './SuperRange.module.css'
 
 // тип пропсов обычного инпута
@@ -25,19 +25,35 @@ const SuperRange: React.FC<SuperRangePropsType> = (
         onChangeRange && onChangeRange(+e.currentTarget.value)
     }
 
+    const dragToggle = (e: DragEvent<HTMLDivElement>) => {
+        onChangeRange && onChangeRange(e.clientX)
+    }
+
+    const dropOver = (e: DragEvent<HTMLDivElement>) => {
+        e.preventDefault()
+    }
+
     const finalRangeClassName = `${s.range} ${className ? className : ''}`
 
     return (
-        <>
+        <div className={finalRangeClassName}>
+            <div className={s.rangeControls}
+                 onDragOver={dropOver}>
+                <div className={s.scale} >
+                    <div className={s.bar} style={{left: `${value}px`, width: `${100 - (value? +value: 1)}%`}}></div>
+                </div>
+                <div className={`${s.toggle}`} style={{left: `${value}px`}}
+                     draggable onDrag={(e)=>dragToggle(e)}></div>
+            </div>
             <input
                 type={'range'}
                 onChange={onChangeCallback}
-                className={finalRangeClassName}
+                className={s.visuallyHidden}
 
                 value={value}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
-        </>
+        </div>
     )
 }
 

@@ -28,6 +28,7 @@ function HW11() {
                         setValue2(valueRange[1])
                     }}
                     valueRange={[value1, value2]}
+                    max={100}
                     // сделать так чтоб value1 и value2 изменялось
                 />
                 <span>{value2}</span>
