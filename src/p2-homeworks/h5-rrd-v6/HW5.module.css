@@ -6,10 +6,10 @@
     width: 320px;
     height: max-content;
     top: 30px;
-    left: -320px;
+    left: -450px;
     transition: left .2s;
     z-index: 2;
-    transform: translateZ(0);
+    transform: translateX(150px);
 }
 
 .hiddenMenuTicker {

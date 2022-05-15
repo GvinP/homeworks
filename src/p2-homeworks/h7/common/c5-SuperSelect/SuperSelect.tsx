@@ -1,5 +1,6 @@
 import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from 'react'
 import style from './SuperSelect.module.css'
+import s from "../../../h11/common/c7-SuperRange/SuperRange.module.css";
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
@@ -12,6 +13,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     {
         options,
         onChange, onChangeOption,
+        className,
         ...restProps
     }
 ) => {
@@ -28,9 +30,11 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         // onChange, onChangeOption
     }
 
+    // const finalRangeClassName = `${s.range} ${className ? className : ''}`
+
     return (
         <select
-            className={style.select}
+            className={`${className} ${style.select}`}
             onChange={onChangeCallback} {...restProps}>
             {mappedOptions}
         </select>
